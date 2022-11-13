@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Custom style CSS -->
+    <link href="./css/style_dashboard.css" rel="stylesheet" type="text/css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Amazon Reviews - Dashboard</title>
+    <style>
+        .col > div {
+          background: lightblue;
+          height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div id="nav"></div>
+  </header>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <i class='bx bxl-amazon'></i>
+        <div class="logo_name">Amazon Reviews</div>
+      </div>
+      <i class='bx bx-menu' id="sidenav_btn"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+          <i class='bx bx-search-alt'></i>
+          <input type="text" placeholder="Search" class="sidenav_search" div id="sidenav_search">
+        </a>
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-bullseye' ></i>
+          <span class="link_name">Keyword Analysis</span>
+        </a>
+        <span class="tooltip-long">Keyword Analysis</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-bar-chart' ></i>
+          <span class="link_name">Compare</span>
+        </a>
+        <span class="tooltip">Compare</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-like' ></i>
+          <span class="link_name">Saved Items</span>
+        </a>
+        <span class="tooltip">Saved Items</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-cog' ></i>
+          <span class="link_name">Settings</span>
+        </a>
+        <span class="tooltip">Settings</span>
+      </li>
+    </ul>
+    <div class="profile_content">
+      <div class="profile">
+        <div class="profile_details">
+          <div class="nameandbusiness">
+            <div id="profile_name" class="profile_name">Place Holder</div>
+            <div id="profile_business" class="profile_business">Business Name</div>
+          </div>
+        </div>
+        <i class='bx bxs-log-out-circle' id="logout_btn"></i>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Main -->
+  <main>
+    <div class="centeredContainer">
+        <div id="div-container">
+
+            <h2 id="heading1">Hello PLACEHOLDERNAME, student of PLACEHOLDERUNI </h2>
+    
+            <!-- Container for all module cards -->
+    
+          </div>
+    </div>
+    </main>
+    </body>
+    </html>
+
+    <!-- Custom JavaScript -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+   
+    <script src="./js/BasicNav.js"></script>
+    <script src="./js/dashboard.js"></script>
