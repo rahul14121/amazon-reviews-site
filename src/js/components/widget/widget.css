@@ -1,0 +1,9 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex: 1;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 100px;
+}/*# sourceMappingURL=widget.css.map */

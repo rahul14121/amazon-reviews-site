@@ -16,6 +16,8 @@
     />
     <!-- Custom style CSS -->
     <link href="./css/style_dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./css/home.css" rel="stylesheet" type="text/css">
+    <link href="./js/components/widget/widget.css" rel="stylesheet" type="text/css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -101,13 +103,19 @@
 
   <!-- Main -->
   <main>
-    <div class="centeredContainer">
+    <div class="container">
         <div id="div-container">
 
             <h2 id="heading1">Hello PLACEHOLDERNAME, student of PLACEHOLDERUNI </h2>
-    
-            <!-- Container for all module cards -->
-    
+
+             <div id="root">
+
+             </div>
+
+          
+            
+            
+            
           </div>
     </div>
     </main>
@@ -115,10 +123,16 @@
     </html>
 
     <!-- Custom JavaScript -->
-
+    <script>var exports = {};</script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
-   
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  
+    <script type="text/babel" src="./js/components/widget/Widget.jsx"></script>
     <script src="./js/BasicNav.js"></script>
     <script src="./js/dashboard.js"></script>
