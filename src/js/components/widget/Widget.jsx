@@ -4,7 +4,7 @@ const Widget = () => {
     return (
         <div className="widget">
             <div className="left">left</div>
-                <span className="totalReviews">Total Reviews: </span>
+                <span className="totalReviews">Total Reviews</span>
             <div className="right">right</div>
 
 
