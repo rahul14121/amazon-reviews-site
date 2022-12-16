@@ -3,15 +3,50 @@ const BrainIcon = () => (
 
 )
 
+const UpArrow = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M22.5 40V13.7L10.1 26.1 8 24 24 8l16 16-2.1 2.1-12.4-12.4V40Z"/></svg>
+
+)
+
+const DownArrow = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24l2.1-2.1 12.4 12.4V8h3v26.3l12.4-12.4L40 24Z"/></svg>
+)
+
+
+
 const Featured = () => {
     return (
-        <><div className="featured">Featured</div><div className="top">
+        <div className="featured">
+          <div className="top">
             <h1 className="title">Sentiment Analysis</h1>
             <BrainIcon></BrainIcon>
-        </div>
-        <div className="bottom"></div>
-        
-        </>
+          </div>
+          <div className="bottom">
+            <div className="featuredChart">
+                <CircularProgressbar value={70} text={"70%"} strokeWidth={5}></CircularProgressbar>
+            </div>
+            <p className="title">Customer Satisfaction With Product</p>
+            <p className="amount">Happy</p>
+            <p className="desc">70% Positive Analysis. People are happy</p>
+            <div className="summary">
+                <div className="item">
+                    <div className="itemTitle">7 Day Average</div>
+                    <div className="itemResult positive"><UpArrow></UpArrow>
+                    <div className="resultAmount">80%</div></div>
+                </div>
+                <div className="item">
+                    <div className="itemTitle">1 Month Average</div>
+                    <div className="itemResult positive"><UpArrow></UpArrow>
+                    <div className="resultAmount">75%</div></div>
+                </div>
+                <div className="item">
+                    <div className="itemTitle">3 Month Average</div>
+                    <div className="itemResult negative"><DownArrow></DownArrow>
+                    <div className="resultAmount">65%</div></div>
+                </div>
+            </div>
+          </div>
+          </div>
 
     )
 }

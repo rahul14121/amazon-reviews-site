@@ -24,6 +24,7 @@
     <link href="./js/components/chart/chart.css" rel="stylesheet" type="text/css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/react-circular-progressbar@2.0.4/dist/styles.css" rel="stylesheet">
 
     <title>Amazon Reviews - Dashboard</title>
     <style>
@@ -110,13 +111,13 @@
     <div class="container">
         <div id="div-container">
 
-            <h2 id="heading1">Hello PLACEHOLDERNAME, student of PLACEHOLDERUNI </h2>
+            <h2 id="heading1">Hello PLACEHOLDERNAME, from PLACEHOLDERNAME </h2>
 
              <div id="root">
 
              </div>
 
-             <div className="charts">
+             <div class="chartsClassOverall">
 
              <div id="root2">
 
@@ -143,15 +144,59 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
-    
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script>
+      Babel.registerPreset("my-preset", {
+        presets: [
+          [Babel.availablePresets["es2015"], { modules: false }],
+          [Babel.availablePresets["react"]]
+          
+        ],
+        plugins: [
+          [Babel.availablePlugins["transform-modules-umd"]]
+        ]        
+      });
+    </script>
+    
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script type="module">
+      import "https://esm.sh/prop-types"
+    </script>
+
+    
+    <script type="module">
+      import * as recharts from 'https://esm.sh/recharts@2.1.9';
+      window.recharts = recharts
+      console.log(recharts)
+      console.log(window)
+      console.log(window.React);
+      //console.log(recharts.ResponsiveContainer)
+      //window.ResponsiveContainer = recharts.ResponsiveContainer
+      //window.AreaChart = recharts.AreaChart
+      //window.Area = recharts.Area
+      //window.XAxis = recharts.XAxis
+      //window.YAxis = recharts.YAxis
+      //window.CartesianGrid = recharts.CartesianGrid
+      //window.Tooltip = recharts.Tooltip
+    </script>
+    
+    
+    
     <script src="https://unpkg.com/@material-ui/core@4.11.0/umd/material-ui.production.min.js"></script>
 
-  
-    <script type="text/babel" src="./js/components/widget/Widget.jsx"></script>
-    <script type="text/babel" src="./js/components/featured/Featured.jsx"></script>
-    <script type="text/babel" src="./js/components/chart/Chart.jsx"></script>
+    <script src="./js/reactCircle.js"></script>
+   
+    
     <script src="./js/BasicNav.js"></script>
     <script src="./js/dashboard.js"></script>
+    <script type="text/babel" src="./js/components/widget/Widget.jsx"></script>
+    <script type="text/babel" src="./js/components/featured/Featured.jsx"></script>
+
+   
+   
+   <script type="text/babel" src="./js/components/chart/Chart.jsx">
+   </script>
+
+   
