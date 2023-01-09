@@ -19,8 +19,9 @@ const Widget = ( { type } ) => {
     switch(type){
         case "totalreviews":
             data={
+                id: "totalreviews",
                 titleWidget: "Total Reviews",
-                section1: "Average Review Score: ",
+                section1: "Total Review Amount: ",
                 section4: "See Review Page",
                 starRating: "4.0",
                 starRatingText: "4.0 out of 5 stars",
@@ -30,6 +31,7 @@ const Widget = ( { type } ) => {
             break;
         case "avgreviews":
             data = {
+                id: "avgreviews",
                 titleWidget: "Breakdown of Review Score",
                 section1: "Positive Reviews (above 4 stars): ",
                 section2: "Average Reviews",
@@ -39,6 +41,7 @@ const Widget = ( { type } ) => {
             break;
         case "posnegcomments":
             data = {
+                id: "posnegcomments",
                 titleWidget: "Positive and Negative Comments",
                 section1: "Amount: ",
                 section2: "Amount: ",
@@ -55,16 +58,17 @@ const Widget = ( { type } ) => {
     
     return (
         <div className="widget">
-            <div className="left">
-                <span className="titleWidget">{data.titleWidget} </span>
-                <span className="section1">{data.section1} </span>
-                <span className="section2">{data.section2}  </span>
-                <span className="section3">{data.section3} </span>
-                <span className="section4">{data.section4} </span>
+            <div className={"left" + data.id}>
+                <span id={data.id}></span>
+                    <span className={"titleWidget" + data.id}>{data.titleWidget} </span>
+                    <span className={"section1" + data.id}>{data.section1} </span>
+                    <span className={"section2" + data.id}>{data.section2}  </span>
+                    <span className={"section3" + data.id}>{data.section3} </span>
+                    <span className={"section4" + data.id}>{data.section4} </span>
             </div>
-            <div className="right">
+            <div className={"right" + data.id}>
             {data.icon}
-            <div className="starSymbol">
+            <div className={"starSymbol" + data.id}>
                 <i data-star={data.starRating} className="starRating"></i>
                 
             

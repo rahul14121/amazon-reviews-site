@@ -11,7 +11,7 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .sidebar{
@@ -289,6 +289,92 @@ body{
     color: #1d1b31;
     margin: 12px;
 }
+
+
+
+.form{
+    background: #fff;
+    width: 600px;
+    height: 55px;
+    display: flex;
+}
+
+.form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.form button{
+    background: #ee6e73;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.form .bx-search-alt{
+    align-self: center;
+    padding: 10px 20px;
+    color: #777;
+}
+
+.loader {
+    display: none;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .loading {
+    border: 2px solid #ccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top-color: #1ecd97;
+    border-left-color: #1ecd97;
+    animation: spin 1s infinite ease-in;
+  }
+
+.textLoading{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    font-size: 50px;
+    color: rgb(0, 67, 250);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+.overlayLoading {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+    cursor: pointer;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
 
 
 

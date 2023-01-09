@@ -1,48 +1,48 @@
 @charset "UTF-8";
 .widget {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
   flex: 1;
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   border-radius: 10px;
   height: 150px;
 }
-.widget .left, .widget .right {
+.widget .lefttotalreviews, .widget .righttotalreviews, .widget .leftavgreviews, .widget .rightavgreviews, .widget .leftposnegcomments, .widget .rightposnegcomments {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.widget .left .titleWidget, .widget .right .titleWidget {
+.widget .lefttotalreviews .titleWidgettotalreviews, .widget .lefttotalreviews .titleWidgetavgreviews, .widget .lefttotalreviews .titleWidgetposnegcomments, .widget .righttotalreviews .titleWidgettotalreviews, .widget .righttotalreviews .titleWidgetavgreviews, .widget .righttotalreviews .titleWidgetposnegcomments, .widget .leftavgreviews .titleWidgettotalreviews, .widget .leftavgreviews .titleWidgetavgreviews, .widget .leftavgreviews .titleWidgetposnegcomments, .widget .rightavgreviews .titleWidgettotalreviews, .widget .rightavgreviews .titleWidgetavgreviews, .widget .rightavgreviews .titleWidgetposnegcomments, .widget .leftposnegcomments .titleWidgettotalreviews, .widget .leftposnegcomments .titleWidgetavgreviews, .widget .leftposnegcomments .titleWidgetposnegcomments, .widget .rightposnegcomments .titleWidgettotalreviews, .widget .rightposnegcomments .titleWidgetavgreviews, .widget .rightposnegcomments .titleWidgetposnegcomments {
   font-weight: bold;
   font-size: 14px;
   color: rgb(160, 160, 160);
 }
-.widget .left .section1, .widget .right .section1 {
+.widget .lefttotalreviews .section1totalreviews, .widget .lefttotalreviews .section1avgreviews, .widget .lefttotalreviews .section1posnegcomments, .widget .righttotalreviews .section1totalreviews, .widget .righttotalreviews .section1avgreviews, .widget .righttotalreviews .section1posnegcomments, .widget .leftavgreviews .section1totalreviews, .widget .leftavgreviews .section1avgreviews, .widget .leftavgreviews .section1posnegcomments, .widget .rightavgreviews .section1totalreviews, .widget .rightavgreviews .section1avgreviews, .widget .rightavgreviews .section1posnegcomments, .widget .leftposnegcomments .section1totalreviews, .widget .leftposnegcomments .section1avgreviews, .widget .leftposnegcomments .section1posnegcomments, .widget .rightposnegcomments .section1totalreviews, .widget .rightposnegcomments .section1avgreviews, .widget .rightposnegcomments .section1posnegcomments {
   font-size: 18px;
   font-weight: 200;
 }
-.widget .left .section2, .widget .right .section2 {
+.widget .lefttotalreviews .section2totalreviews, .widget .lefttotalreviews .section2avgreviews, .widget .lefttotalreviews .section2posnegcomments, .widget .righttotalreviews .section2totalreviews, .widget .righttotalreviews .section2avgreviews, .widget .righttotalreviews .section2posnegcomments, .widget .leftavgreviews .section2totalreviews, .widget .leftavgreviews .section2avgreviews, .widget .leftavgreviews .section2posnegcomments, .widget .rightavgreviews .section2totalreviews, .widget .rightavgreviews .section2avgreviews, .widget .rightavgreviews .section2posnegcomments, .widget .leftposnegcomments .section2totalreviews, .widget .leftposnegcomments .section2avgreviews, .widget .leftposnegcomments .section2posnegcomments, .widget .rightposnegcomments .section2totalreviews, .widget .rightposnegcomments .section2avgreviews, .widget .rightposnegcomments .section2posnegcomments {
   font-size: 18px;
   font-weight: 200;
 }
-.widget .left .section3, .widget .right .section3 {
+.widget .lefttotalreviews .section3totalreviews, .widget .lefttotalreviews .section3avgreviews, .widget .lefttotalreviews .section3posnegcomments, .widget .righttotalreviews .section3totalreviews, .widget .righttotalreviews .section3avgreviews, .widget .righttotalreviews .section3posnegcomments, .widget .leftavgreviews .section3totalreviews, .widget .leftavgreviews .section3avgreviews, .widget .leftavgreviews .section3posnegcomments, .widget .rightavgreviews .section3totalreviews, .widget .rightavgreviews .section3avgreviews, .widget .rightavgreviews .section3posnegcomments, .widget .leftposnegcomments .section3totalreviews, .widget .leftposnegcomments .section3avgreviews, .widget .leftposnegcomments .section3posnegcomments, .widget .rightposnegcomments .section3totalreviews, .widget .rightposnegcomments .section3avgreviews, .widget .rightposnegcomments .section3posnegcomments {
   font-size: 18px;
   font-weight: 200;
 }
-.widget .left .section4, .widget .right .section4 {
+.widget .lefttotalreviews .section4totalreviews, .widget .lefttotalreviews .section4avgreviews, .widget .lefttotalreviews .section4posnegcomments, .widget .righttotalreviews .section4totalreviews, .widget .righttotalreviews .section4avgreviews, .widget .righttotalreviews .section4posnegcomments, .widget .leftavgreviews .section4totalreviews, .widget .leftavgreviews .section4avgreviews, .widget .leftavgreviews .section4posnegcomments, .widget .rightavgreviews .section4totalreviews, .widget .rightavgreviews .section4avgreviews, .widget .rightavgreviews .section4posnegcomments, .widget .leftposnegcomments .section4totalreviews, .widget .leftposnegcomments .section4avgreviews, .widget .leftposnegcomments .section4posnegcomments, .widget .rightposnegcomments .section4totalreviews, .widget .rightposnegcomments .section4avgreviews, .widget .rightposnegcomments .section4posnegcomments {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-size: 12px;
   border-bottom: 1px solid gray;
 }
-.widget .left .starSymbol, .widget .right .starSymbol {
+.widget .lefttotalreviews .starSymboltotalreviews, .widget .righttotalreviews .starSymboltotalreviews, .widget .leftavgreviews .starSymboltotalreviews, .widget .rightavgreviews .starSymboltotalreviews, .widget .leftposnegcomments .starSymboltotalreviews, .widget .rightposnegcomments .starSymboltotalreviews {
   display: flex;
   align-items: center;
   font-size: 14px;
 }
-.widget .left .icon, .widget .right .icon {
+.widget .lefttotalreviews .icon, .widget .righttotalreviews .icon, .widget .leftavgreviews .icon, .widget .rightavgreviews .icon, .widget .leftposnegcomments .icon, .widget .rightposnegcomments .icon {
   font-size: 18px;
   padding: 5px;
   border-radius: 5px;

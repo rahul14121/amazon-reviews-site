@@ -1,6 +1,6 @@
 .widget{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
     flex: 1;
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
@@ -9,39 +9,39 @@
     height: 150px;
     
 
-    .left, .right{
+    .lefttotalreviews, .righttotalreviews, .leftavgreviews, .rightavgreviews, .leftposnegcomments, .rightposnegcomments{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        .titleWidget{
+        .titleWidgettotalreviews, .titleWidgetavgreviews, .titleWidgetposnegcomments{
             font-weight: bold;
             font-size: 14px;
             color: rgb(160, 160, 160);
         }
 
-        .section1{
+        .section1totalreviews, .section1avgreviews, .section1posnegcomments{
             font-size: 18px;
             font-weight: 200;
         }
 
-        .section2{
+        .section2totalreviews, .section2avgreviews, .section2posnegcomments{
             font-size: 18px;
             font-weight: 200;
         }
 
-        .section3{
+        .section3totalreviews, .section3avgreviews, .section3posnegcomments{
             font-size: 18px;
             font-weight: 200;
         }
 
-        .section4{
+        .section4totalreviews, .section4avgreviews, .section4posnegcomments{
             width: max-content;
             font-size: 12px;
             border-bottom: 1px solid gray;
         }
 
-        .starSymbol{
+        .starSymboltotalreviews{
             display: flex;
             align-items: center;
             font-size: 14px;
